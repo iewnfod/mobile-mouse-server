@@ -1,7 +1,7 @@
 use std::net::{IpAddr, UdpSocket};
 use ws::Message;
 
-use crate::controller::Controller;
+use crate::controller::{Controller, MouseKey};
 
 const DEFAULT_PORT: usize = 57632;
 
@@ -37,11 +37,35 @@ impl Server {
 				if let Some(t) = v.get("type") {
 					let raw_cmd = t.to_string();
 					let cmd = raw_cmd[1..raw_cmd.len()-1].to_string();
-					println!("command type: {}", &cmd);
+
+					println!("{}: {:?}", &cmd, &v);
+
 					let mut controller = Controller::new();
+
 					match cmd.as_str() {
 						"move" => {
-							controller.move_mouse(v["x"].as_i64().unwrap(), v["y"].as_i64().unwrap());
+							controller.move_mouse(
+								v["x"].as_f64().unwrap(),
+								v["y"].as_f64().unwrap()
+							);
+						},
+						"left click" => {
+							controller.click(MouseKey::Left);
+						},
+						"left press" => {
+							controller.press(MouseKey::Left);
+						},
+						"left release" => {
+							controller.release(MouseKey::Left);
+						},
+						"right click" => {
+							controller.click(MouseKey::Right);
+						},
+						"right press" => {
+							controller.press(MouseKey::Right);
+						},
+						"right release" => {
+							controller.release(MouseKey::Right);
 						},
 						_ => {
 							println!("Invalid operation: {}", &cmd);
