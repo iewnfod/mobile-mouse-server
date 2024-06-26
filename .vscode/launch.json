@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Run Project",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceRoot}/target/debug/${workspaceFolderBasename}",
+            "preLaunchTask": "build"
+        }
+    ]
+}
