@@ -2,7 +2,7 @@
 name = "mobile-mouse-server"
 version = "0.1.0"
 edition = "2021"
-description = "A server for mobile mouse"
+description = "The server for mobile mouse"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -23,4 +23,4 @@ name = "Mobile Mouse Server"
 identifier = "com.iewnfod.mobilemouseserver"
 icon = ["src/icons/icon.icns"]
 copyright = "Copyright © 2024 Iewnfod. All rights reserved."
-short_description = "A server for mobile mouse"
+short_description = "The server for mobile mouse"
