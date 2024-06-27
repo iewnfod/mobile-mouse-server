@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="1024px" height="1024px" version="1.1" viewBox="0 0 1024 1024" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs><style>
+      .cls-1 {
+        fill: url(#_未命名的渐变);
+        filter: url(#outer-glow-1);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#_未命名的渐变_2);
+      }
+
+      .cls-3 {
+        fill: #595757;
+      }
+    </style><linearGradient id="_未命名的渐变" x1="150.08" x2="1128.8" y1="638.6" y2="638.6" data-name="未命名的渐变" gradientTransform="matrix(1 0 0 -1 -208.3 1234.7)" gradientUnits="userSpaceOnUse"><stop stop-color="#e8e8e8" offset="0"/><stop stop-color="#abaaaa" offset="1"/></linearGradient><filter id="outer-glow-1" x="-.12261" y="-.12261" width="1.2452" height="1.2452"><feOffset dx="0" dy="0"/><feGaussianBlur result="blur" stdDeviation="50"/><feFlood flood-color="#805197"/><feComposite in2="blur" operator="in"/><feComposite in="SourceGraphic"/></filter><linearGradient id="_未命名的渐变_2" x1="272.41" x2="1006.5" y1="1005.6" y2="271.57" data-name="未命名的渐变 2" gradientTransform="matrix(1 0 0 -1 -208.3 1234.7)" gradientUnits="userSpaceOnUse"><stop stop-color="#c0bebe" offset="0"/><stop stop-color="#e3e1e0" offset="1"/></linearGradient></defs><g transform="matrix(.83483 0 0 .83483 152.92 17.079)"><rect class="cls-1" x="-58.217" y="106.76" width="978.72" height="978.72" rx="234.98" ry="234.98" fill="url(#_%E6%9C%AA%E5%91%BD%E5%90%8D%E7%9A%84%E6%B8%90%E5%8F%98)" stroke-width="1.0016"/><rect class="cls-2" x="-4.2364" y="160.74" width="870.76" height="870.76" rx="233.35" ry="233.35" fill="url(#_%E6%9C%AA%E5%91%BD%E5%90%8D%E7%9A%84%E6%B8%90%E5%8F%98_2)" stroke-width="1.0016"/><path d="m206.14 694.56c-39.429 4.8912-69.875 38.431-69.875 79.158h69.875m-69.875 59.893a79.857 79.857 0 0 0 79.857 79.857 79.857 79.857 0 0 0 79.857-79.857v-39.928h-159.71m89.839-99.122v79.158h69.875c0-40.727-30.545-74.267-69.875-79.158z" fill="#595757" stroke-width=".23432" p-id="4317"/><text transform="matrix(3.372 0 0 3.372 -1690.2 -628.86)" fill="#595757" font-family="Italianno" font-size="53.333px" stroke-width="1.0016" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;shape-inside:url(#rect1);white-space:pre" xml:space="preserve"><tspan x="631.11133" y="298.39568">Server</tspan></text></g></svg>

@@ -1,5 +1,5 @@
 use clipboard::{ClipboardContext, ClipboardProvider};
-use tao::event_loop::{ControlFlow, EventLoopBuilder};
+use tao::{event_loop::{ControlFlow, EventLoopBuilder}, platform::macos::EventLoopExtMacOS};
 use tray_icon::{menu::{accelerator::{Accelerator, Modifiers}, Menu, MenuEvent, MenuItem, PredefinedMenuItem}, Icon, TrayIconBuilder, TrayIconEvent};
 
 const ICON: &[u8] = include_bytes!("./icons/tray.png");
@@ -12,7 +12,10 @@ fn copy_address(address: String) {
 pub fn main(addresses: Vec<String>) {
 	let copy_address_string = addresses.clone();
 
-	let event_loop = EventLoopBuilder::new().build();
+	let mut event_loop = EventLoopBuilder::new().build();
+
+	#[cfg(target_os = "macos")]
+	event_loop.set_activation_policy(tao::platform::macos::ActivationPolicy::Accessory);
 
 	let tray_menu = Menu::new();
 

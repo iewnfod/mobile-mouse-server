@@ -2,6 +2,7 @@
 name = "mobile-mouse-server"
 version = "0.1.0"
 edition = "2021"
+description = "A server for mobile mouse"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -16,3 +17,10 @@ tray-icon = "0.14.3"
 core-foundation = "0.9.4"
 image = "0.25.1"
 local-ip-address = "0.6.1"
+
+[package.metadata.bundle]
+name = "Mobile Mouse Server"
+identifier = "com.iewnfod.mobilemouseserver"
+icon = ["src/icons/icon.icns"]
+copyright = "Copyright © 2024 Iewnfod. All rights reserved."
+short_description = "A server for mobile mouse"
